@@ -5,15 +5,45 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/uno"
+        android:layout_width="188dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:shadowColor="#000000"
+        android:text="Controlador del sistema"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/bot"
+        android:layout_width="190dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="124dp"
+        android:text="Opciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dos" />
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="170dp"
+        android:layout_height="151dp"
+        android:text="ºConfiguracion \n Acerca de:   \n  Seguridad \n Hora y tiempo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/uno"
+        app:layout_constraintEnd_toEndOf="@+id/uno"
+        app:layout_constraintStart_toStartOf="@+id/uno" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
